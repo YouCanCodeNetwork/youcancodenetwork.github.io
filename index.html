@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>YouCanCode</title>
@@ -31,7 +27,7 @@
 						<nav>
 							<ul>
 								<li><a href="#team">Team</a></li>
-								<li><a href="#work">Work</a></li>
+								<li><a href="#locations">Locations</a></li>
 								<li><a href="#about">About</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
@@ -45,22 +41,53 @@
 						<!-- Team -->
 							<article id="team">
 								<h2 class="major">Team</h2>
-								<figure>
-								<span class="image main"><img src="images/Deepro Headshot.jpg" alt="" /></span>
-								<figcaption> <center> Founder </center> </figcaption>
-								</figure>
+								
+								<center><span class="img-box"><img src="images/Deepro Headshot.jpg" alt="" /></span></center>
+								<center> <font color="red" size="+3" > <b> Deepro Hoque </b></font></center>
+								<center> <font size="+2"> <b> Founder </b></font></center>
 								<p>I am a senior at Saint Francis High School and the founder of YouCanCode. I have a passion for coding and computing. I always wanted to inspire that passion in others, so I founded YouCanCode. Contact me directly at deeprohoque@gmail.com </p>
-								<span class="image main"><img src="images/Kratik.jpg" alt="" /></span>
-								<p>I am a junior at Evergreen Valley High School. I am a director I have a passion for coding and computing. I always wanted to inspire that passion in others, so I founded YouCanCode. Contact me directly at deeprohoque@gmail.com </p>
+								<center><span class="img-box"><img src="images/Kratik.jpg" alt="" /></span></center>
+								<center> <font color="red" size="+3" > <b> Kratik Agrawal </b></font></center>
+								<center> <font size="+2"> <b> Director </b></font></center>
+								<p>I am a junior at Evergreen Valley High School. I am the director for Evergeen classes. Contact me directly at kratik.agrawal@yahoo.com </p>
 							</article>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+						<!-- Locations -->
+							<article id="locations">
+								<h2 class="major">Locations</h2>
+								<head>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+  </head>
+  <body>    
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var bubb = {lat: 37.3782, lng: 122.0818};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: bubb});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: bubb, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4B9HGFZhb_nGpk7IzJzpKECu36lTYd2g&callback=initMap">
+    </script>
+  </body>
+    
 								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
 								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
 							</article>
+
+							
 
 						<!-- About -->
 							<article id="about">
